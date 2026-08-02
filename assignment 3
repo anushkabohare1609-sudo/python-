@@ -1,0 +1,11 @@
+# Create a list of assignments
+assignments = ["English", "Maths", "Science"]
+
+# Add a new assignment
+assignments.append("Computer")
+
+# Remove a completed assignment
+assignments.remove("Maths")
+
+# Print the updated list
+print("Updated Assignments:", assignments)
