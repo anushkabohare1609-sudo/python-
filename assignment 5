@@ -1,0 +1,21 @@
+students = int(input("Enter number of students: "))
+
+total_class = 0
+
+for i in range(students):
+    total = 0
+
+    print("Student", i + 1)
+
+    for j in range(5):
+        score = float(input("Enter test score: "))
+        total = total + score
+
+    average = total / 5
+    total_class = total_class + total
+
+    print("Average score:", average)
+
+overall_average = total_class / (students * 5)
+
+print("Overall class average:", overall_average)
