@@ -1,0 +1,10 @@
+def discount(amount, discount_percent):
+    discount = amount * discount_percent / 100
+    final_amount = amount - discount
+    return final_amount
+
+
+amount = 1000
+discount_percent = 20
+
+print("Final payable amount:", discount(amount, discount_percent))
