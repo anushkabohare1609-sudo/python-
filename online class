@@ -1,0 +1,27 @@
+sender = input("enter sender name: ")
+receiver = input("enter receiver name: ")
+parcel_type = input("enter parcel type: ")
+location = input("enter delivery location: ")
+
+print("\n========== courier receipt ==========")
+print("sender name       :", sender)
+print("receiver name     :", receiver)
+print("parcel type       :", parcel_type)
+print("delivery location :", location)
+print("=====================================")
+
+tracking_code = input("\nenter tracking code: ")
+
+letters = 0
+digits = 0
+
+for ch in tracking_code:
+    if ch.isalpha():
+        letters += 1
+    elif ch.isdigit():
+        digits += 1
+
+print("\n========== tracking analysis ==========")
+print("number of letters :", letters)
+print("number of digits  :", digits)
+print("=======================================")
