@@ -1,0 +1,15 @@
+def runs(scores):
+    highest = max(scores)
+    lowest = min(scores)
+    average = sum(scores) / len(scores)
+
+    return highest, lowest, average
+
+
+scores = [45, 78, 32, 90, 65]
+
+highest, lowest, average = runs(scores)
+
+print("Highest:", highest)
+print("Lowest:", lowest)
+print("Average:", average)
